@@ -1,0 +1,6 @@
+R1-HQ#sh ip int br
+Interface              IP-Address      OK? Method Status                Protocol 
+GigabitEthernet0/0     192.168.10.1    YES manual up                    up 
+GigabitEthernet0/1     192.168.20.1    YES manual up                    up 
+GigabitEthernet0/2     unassigned      YES unset  administratively down down 
+Vlan1                  unassigned      YES unset  administratively down down
