@@ -67,9 +67,15 @@ Full configuration: [configs/R1-HQ_running-config.txt](configs/R1-HQ_running-con
 **Reading the results:** TTL=127 (128 minus 1) shows the packet crossed one router. The first IPv4 ping timed out because the PC and router had to resolve MAC addresses with ARP first. IPv6 did not lose a packet because Neighbor Discovery had already completed.
 
 ## 8. Troubleshooting
-| Ticket | Summary |
-|---|---|
-| [TKT-001](troubleshooting/TKT-001-command-in-wrong-mode.md) | Interface command rejected because it was entered in privileged EXEC instead of global config |
+| Ticket | Priority | Summary |
+|---|---|---|
+| [TKT-001](troubleshooting/TKT-001-command-in-wrong-mode.md) | P4 | Interface command rejected - entered in wrong IOS mode |
+| [TKT-002](troubleshooting/TKT-002-wrong-default-gateway.md) | P3 | One user cannot reach server - incorrect default gateway |
+| [TKT-003](troubleshooting/TKT-003-router-interface-shutdown.md) | P2 | Server LAN unreachable - router interface shut down |
+| [TKT-004](troubleshooting/TKT-004-ipv6-routing-disabled.md) | P3 | IPv6 failing, IPv4 working - IPv6 routing disabled |
+
+**Method:** define the problem, then scope (one user or many, IPv4 or IPv6), then test bottom-up (gateway first, then far end), then confirm the root cause, fix, verify, update the customer, and record prevention.
+
 
 ## 9. Security considerations
 - A login banner warns that access is restricted.
